@@ -1,8 +1,8 @@
-# Acebook
+# Acebook - Team Water 🌊
 
-In this project, myself and my team were tasked with working on an existing application, similar to Facebook. A significant part of the challenge was familiarising ourselves with the inherited codebase, as we worked to **improve and extend** it.
+In this project, we were tasked with working on an existing 'bare bones' social media application, to improve its functionality and add features over a two week period. A significant part of the challenge was familiarising ourselves with the inherited codebase, as we worked to **improve and extend** it.
 
-# 🤝 Our Team
+## 🤝 Our Team
 * **[Ellie Priestley](https://github.com/elliepriestley)**
 * **[Dan Gibson](https://github.com/spcmarine)**
 * **[Alex Wilson](https://github.com/APWilson97)**
@@ -23,15 +23,11 @@ Backend:
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
-## Documentation
+We also used Cloudinary to host images from user posts
 
-[More documentation of the codebase and its architecture can be found here.](./DOCUMENTATION.md) It's recommended you all read this _after making sure the whole setup below worked for everyone_. Then work together on a diagram describing how the application works.
+## Additional Resources
 
-[A template Miro board for your diagrams can be found here.](https://miro.com/app/board/uXjVPqNzFfc=/?share_link_id=360271550320) Make sure your validate your diagrams with your coach.
-
-## Card wall
-
-https://trello.com/b/ZU22GcBv/team-water-acebook
+We used Trello as a project managament tool during this project. You can find a link to the board here: https://trello.com/b/ZU22GcBv/team-water-acebook
 
 ## Quickstart
 
@@ -48,6 +44,7 @@ https://trello.com/b/ZU22GcBv/team-water-acebook
    nvm install 18
    ```
 
+
 ### Set up your project
 
 1. Fork this repository
@@ -60,10 +57,15 @@ https://trello.com/b/ZU22GcBv/team-water-acebook
    ; cd ../frontend
    ; npm install
    ```
+5. Install cloudinary, axios, and dotenv dependencies separately in the root directory
+   ```
+   ; cd ..
+   ; npm install cloudinary axios dotenv
+   ```
 
-> You might get warning messages about the installed dependencies at this point. You can ignore them, as long as the installation process doesn't fail. If the setup fails at this point, don't wait for too long and reach out to your coach.
+> You might get warning messages about the installed dependencies at this point. You can ignore them, as long as the installation process doesn't fail.
 
-5. Install an ESLint plugin for your editor. For example: [`linter-eslint`](https://github.com/AtomLinter/linter-eslint) for Atom.
+6. Install an ESLint plugin for your editor. For example: [`linter-eslint`](https://github.com/AtomLinter/linter-eslint) for Atom.
 6. Install MongoDB
    ```
    brew tap mongodb/brew
@@ -74,6 +76,7 @@ https://trello.com/b/ZU22GcBv/team-water-acebook
    ```
    brew services start mongodb-community@5.0
    ```
+8. Update lines 13-15 within the www file in api/bin with your cloudinary API details.
 
 ### How to run the server and use the app (as a human)
 
@@ -94,13 +97,10 @@ https://trello.com/b/ZU22GcBv/team-water-acebook
   ; npm start
   ```
 
-You should now be able to open your browser and go to `http://localhost:3000/signup` to create a new user.
+You should now be able to open your browser and will be directed automatically to the signup page. Enjoy!
 
-Then, after signing up, you should be able to log in by going to `http://localhost:3000/login`.
 
-After logging in, you won't see much but you can create posts using PostMan and they should then show up in the browser if you refresh the page.
-
-### How to run automated tests
+### 🧪 Running the tests
 
 The automated tests run by sending actual HTTP requests to the API. Therefore, before anything, you'll need to start the backend server in test mode (so that it connects to the test DB).
 
@@ -155,16 +155,6 @@ Some people occasionally experience MongoDB connection errors when running the t
 - Check that MongoDB is installed using `mongo --version`
 - Check that it's running using `brew services list`
 
-If you have issues that are not resolved by these tips, please reach out to a coach and, once the issue is resolved, we can add a new tip!
+## 🫶 Special Thanks
 
-
-
-<!-- BEGIN GENERATED SECTION DO NOT EDIT -->
-
----
-
-**How was this resource?**  
-[😫](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Facebook-mern-template&prefill_File=README.md&prefill_Sentiment=😫) [😕](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Facebook-mern-template&prefill_File=README.md&prefill_Sentiment=😕) [😐](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Facebook-mern-template&prefill_File=README.md&prefill_Sentiment=😐) [🙂](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Facebook-mern-template&prefill_File=README.md&prefill_Sentiment=🙂) [😀](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Facebook-mern-template&prefill_File=README.md&prefill_Sentiment=😀)  
-Click an emoji to tell us.
-
-<!-- END GENERATED SECTION DO NOT EDIT -->
+A huge thank you to the Team at [Makers Academy](https://www.makers.tech/) for this challenging and interesting project, and especially to [Claire](https://github.com/ClaireMakers) for your support and guidance as a coach. 

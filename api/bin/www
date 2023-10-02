@@ -7,6 +7,15 @@ if (!process.env.JWT_SECRET) {
 }
 
 /**
+ * Process env for cloudinary link - replace strings with your relevant details
+ */
+
+process.env.CLOUD_NAME = ""
+process.env.API_KEY = ""
+process.env.API_SECRET = ""
+
+
+/**
  * Module dependencies.
  */
 

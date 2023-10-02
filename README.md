@@ -158,3 +158,4 @@ Some people occasionally experience MongoDB connection errors when running the t
 ## 🫶 Special Thanks
 
 A huge thank you to the Team at [Makers Academy](https://www.makers.tech/) for this challenging and interesting project, and especially to [Claire](https://github.com/ClaireMakers) for your support and guidance as a coach. 
+
